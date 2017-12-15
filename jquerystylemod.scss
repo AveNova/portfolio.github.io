@@ -1,0 +1,74 @@
+.slick-prev:before {
+    content: url('png-img/back.png');
+}
+
+.slick-next:before {
+    content: url('png-img/next.png');
+}
+
+.banner-slider-mod  {
+
+     .slick-next {
+    right: -75px;
+    }
+}
+
+.banner-slider-mod  {
+
+    .slick-prev {
+    left: -75px;
+    }
+}
+
+.price-slider-mod {
+
+     .slick-next {
+    right: -75px;
+    }
+}
+
+
+.price-slider-mod {
+
+    .slick-prev {
+    left: -75px;
+    }
+}
+
+.banner-slider-mod {
+
+     .slick-prev, .slick-next {
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    }
+}
+
+
+.price-slider-mod    {
+
+.slick-prev, .slick-next {
+
+    width: 85px;
+    height: 85px;
+    background: #a7a4a4;
+    border: 1px solid $dark-grey;
+    border-radius: 50px;
+    }
+}
+
+.banner-slider-mod {
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: #2d3135b5;
+    }
+}
+
+.price-slider-mod  {
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        color: transparent;
+    outline: none;
+    background: #656262;
+    }
+}
