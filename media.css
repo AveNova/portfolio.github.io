@@ -101,7 +101,6 @@ a {
   /*    position: relative;*/
   display: -ms-flexbox;
   display: flex;
-  margin-top: -90px;
   padding: .5rem 1rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -170,11 +169,12 @@ ul.main_menu.section {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  min-height: 360px;
   color: #FFF; }
 
 .menubar {
-  padding: 40px 0; }
+  padding: 30px 0px;
+  margin: 0; }
 
 .menubar.sticky {
   position: fixed;
@@ -219,8 +219,7 @@ ul.main_menu.section {
   border-color: #ed145b; }
 
 .siteground .navbar {
-  margin: 0;
-  padding-top: 35px; }
+  margin: 0; }
 
 a:hover {
   text-decoration: none !important; }
@@ -323,7 +322,7 @@ div.top-head__main_item_button a {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); }
 
 a:-webkit-any-link {
-  cursor: auto;
+  cursor: pointer;
   text-decoration: none; }
 
 .top-head__main_item_link {
@@ -482,7 +481,7 @@ a:-webkit-any-link {
 
 .image__logo:hover {
   border: 1px solid rgba(28, 14, 16, 0.4);
-  background: #0001f; }
+  background: #9b9b9c; }
 
 .image__logo:hover .first {
   transform: scale(-1); }
@@ -563,10 +562,14 @@ li {
   padding-bottom: 100px; }
 
 .banner {
+  min-height: 360px; }
+
+.banner-background {
   background: url(png-img/bodybackground.png) 0 0 no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 .banner-block-article {
   margin: 0 107px;
@@ -664,15 +667,22 @@ li {
 
 .top-item-button p {
   margin: 0 auto;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease; }
 
-.top-item-button:hover {
-  background-color: #ed145b; }
-
-.top-item-button a:hover {
+a.price-block-body__item-button__link.top-item-button:hover {
   color: #f4f4f4;
   border: 1.5px solid #f4f4f4;
-  background: #ed145b; }
+  background-color: #ed145b;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease; }
 
 .bottom-button a:hover {
   color: #ed145b;
@@ -808,6 +818,27 @@ li {
   display: inline-block;
   margin-left: 26px; }
 
+a.head-article-button__link {
+  display: block;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear; }
+
+a.head-article-button__link:hover {
+  display: block;
+  display: block;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+  color: darkred;
+  transform: rotateY(360deg);
+  background: darkgrey;
+  font-family: cursive; }
+
 .head-article-button__link {
   font-size: 15px;
   padding: 13px 15px;
@@ -878,15 +909,25 @@ li {
   background-color: #ed145b; }
 
 .img-fluid {
-  -webkit-clip-path: polygon(0% 97%, 0% 0%, 101% 0%, 101% 100%); }
+  -webkit-clip-path: polygon(0% 97%, 0% 0%, 101% 0%, 101% 100%);
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out; }
 
 .project-menu-item-list__img-link:hover .img-fluid {
   opacity: .15;
-  clip-path: none; }
+  clip-path: none;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out; }
 
-.body-banner {
+.body-banner__item {
   color: #f4f4f4;
-  background-image: url(png-img/footerbackground.png);
+  background: url(png-img/footerbackground.png) 0 0 no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
@@ -977,6 +1018,11 @@ li {
   position: absolute;
   top: 90px;
   right: 150px;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
   display: block;
   width: 70px;
   height: 100%;
