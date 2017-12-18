@@ -78,6 +78,8 @@ $weightL: 800;
 
 @import 'jquerystylemod.scss';
 
+
+
 .sitestep
 {
     width: 100%;
@@ -106,7 +108,7 @@ $weightL: 800;
 
     text-align: center;
 
-    background: #f4f4f4;
+    background: #f4f4f4 none repeat scroll 0 0;
     background-size: cover;
     /*margin: -275px auto 0 auto;*/
 }
@@ -237,12 +239,20 @@ ul.main_menu.section
 }
 
 .top-head {
-    background: #c0301c url(png-img/headbackground.png) 0 0 no-repeat;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+    // background: #c0301c url(png-img/headbackground.png) 0 0 no-repeat;
+    // -webkit-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    // width: 100%;
+    // min-height: 360px;
+    // color: #FFF;
+    background-image: url(png-img/headbackground.png);
+    min-height: 100%;
+        position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    min-height: 360px;
     color: #FFF;
 }
 
@@ -882,11 +892,14 @@ li
 }
 
 .banner-background {
-        background: url(png-img/bodybackground.png) 0 0 no-repeat;
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-            overflow: hidden;
+        background: url(png-img/bodybackground.png);
+    min-height: 100%;
+        position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
 }
 
 
@@ -1441,6 +1454,11 @@ a.head-article-button__link:hover {
     color: $pure-color;
 }
 
+.img-fluid.acordeon-img {
+    -webkit-clip-path: none;
+}
+
+
 
 
 
@@ -1531,15 +1549,17 @@ a.head-article-button__link:hover {
 }
 
 
-
-
 .body-banner__item
 {
     color: $grey;
-    background: url(png-img/footerbackground.png) 0 0 no-repeat;
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    background: url(png-img/footerbackground.png);
+    min-height: 100%;
+        position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
 }
 
 .body-banner__item-article hr

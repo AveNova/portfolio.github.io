@@ -45,10 +45,10 @@
 	<div class="siteground " >
 			<!-- <div  id="top-header-banner">
 				<img src="png-img/headbackground.png" alt="" class="img-fluid w-100">
-			</div> -->
+			</div> data-paroller-factor="0.35" -->
 			<!-- start top_head  -->
 
-			<section class=" top-head " data-paroller-factor="0.35" data-paroller-direction="vertical">
+			<section class=" top-head "  >
 				<div class="menubar">
 				<!-- <nav class="navbar sticky-top navbar-expand-lg navbar-dark  navmenu-fixed-right   " style="background-color: transparent;" > -->
 				<nav class="navbar navbar-expand-lg  navmenu-fixed-right  navbar-dark " style="background-color: transparent;" >
@@ -180,7 +180,7 @@
 									<!-- end  service-block -->
 									<!-- begin banner -->
 									<section class="banner" >
-										<div class="banner-background" data-paroller-factor="-0.25" data-paroller-direction="vertical">
+										<div class="banner-background" data-paroller-factor="-0.25" >
 											<div class="banner-block">
 											<div class="banner-block-article banner-slider-mod">
 												<div class="slider">
@@ -508,19 +508,20 @@
 											<div class="acordeon-body">
 												<p class="acordeon-body-text">Please visit next link:</p>
 												<div class="acordeon-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-											  <div><h3>1</h3></div>
-											  <div><h3>2</h3></div>
-											  <div><h3>3</h3></div>
-											  <div><h3>4</h3></div>
-											  <div><h3>5</h3></div>
-											  <div><h3>6</h3></div>
+											  <div><a href="#" alt="sliders-img"><img class="img-fluid p-2 mr-2  acordeon-img" src="png-img/slide-1.jpg"></a></div>
+											  <div><a href="#" alt="sliders-img"><img class="img-fluid p-2 mr-2  acordeon-img" src="png-img/slide-2.jpg"></a></div>
+											  <div><a href="#" alt="sliders-img"><img class="img-fluid p-2 mr-2  acordeon-img" src="png-img/slide-3.jpg"></a></div>
+											  <div><a href="#" alt="sliders-img"><img class="img-fluid p-2 mr-2  acordeon-img" src="png-img/slide4.jpg"></a></div>
+											  <div><a href="#" alt="sliders-img"><img class="img-fluid p-2 mr-2  acordeon-img" src="png-img/slide5.jpg"></a></div>
+											  <div><a href="#" alt="sliders-img"><img class="img-fluid p-2 mr-2  acordeon-img" src="png-img/slide6.jpg"></a></div>
 											</div>
 											</div>
 
 										</div>
 									</section >
+
 									<section class="body-banner">
-										<div class="body-banner__item  sitestep" data-paroller-factor="-0.25" data-paroller-direction="vertical">
+										<div class="body-banner__item  sitestep" >
 											<div>
 												<div class=" body-banner__item-list">
 													<div class=" body-banner__item-article">
@@ -586,14 +587,14 @@
 
 				<script src="https://code.jquery.com/jquery-3.2.1.js" ></script>
 				<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-				<script src="js/parallaxie.min.js"></script>
+				<!-- <script src="js/parallaxie.min.js"></script> -->
 				<script src="js/jquery.scrollTo.min"></script>
 				<script type="text/javascript" src="slick/slick.min.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 				<!-- JQuery Paralax  -->
 				<script src="js/jquery.paroller.js"></script>
-
+				<script src="js/parallax.js"></script>
 				<script type="text/javascript">
 					$(function() {
 						$(window).scroll(function() {
@@ -615,7 +616,7 @@
 						});
 					  });
 				</script>
-				<script type="text/javascript">
+				<script>
 					// $(document).ready(function(){
 						$(window).scroll(function() {
 							if ($(this).scrollTop() > 1 ){
@@ -628,7 +629,7 @@
 					// });
 				</script>
 
-				<script type="text/javascript">
+				<script >
 
 					$(document).ready(function(){
 						$('.slider').slick({
@@ -646,7 +647,7 @@
 						});
 					});
 				</script>
-				<script type="text/javascript">
+				<script >
 					$(document).ready(function(){
 						$('.acordeon-slider').slick();
 					});
@@ -700,46 +701,16 @@
 					});
 				</script>
 
-	<script>
-	   $(function () {
-	        $(window).paroller();
-	    });
+
+<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
 	</script>
-<!-- 			$('.responsive').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-}); -->
+
+
 
 </body>
 </html>

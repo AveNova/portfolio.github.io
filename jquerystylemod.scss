@@ -35,6 +35,32 @@
     }
 }
 
+.acordeon-slider {
+
+     .slick-prev {
+    left: -75px;
+    }
+ }
+
+ .acordeon-slider {
+
+     .slick-next {
+    right: -75px;
+    }
+}
+
+
+
+.slick-prev, .slick-next {
+
+    width: 85px;
+    height: 85px;
+    background: #a7a4a4;
+    border: 1px solid $dark-grey;
+    border-radius: 50px;
+    }
+
+
 .banner-slider-mod {
 
      .slick-prev, .slick-next {
