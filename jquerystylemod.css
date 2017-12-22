@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$dark-grey".
-        on line 41 of C:\Users\Kostya\Desktop\PortpholiaProject\jquerystylemod.scss
+        on line 57 of C:\Users\Kostya\Desktop\PortpholiaProject\jquerystylemod.scss
 
-36: .slick-prev, .slick-next {
-37: 
-38:     width: 85px;
-39:     height: 85px;
-40:     background: #a7a4a4;
-41:     border: 1px solid $dark-grey;
-42:     border-radius: 50px;
-43:                 @media (max-width: 560px) {
-44:        width: 45px;
-45:     height: 45px
-46:     }
+52: .slick-prev, .slick-next {
+53: 
+54:     width: 85px;
+55:     height: 85px;
+56:     background: #a7a4a4;
+57:     border: 1px solid $dark-grey;
+58:     border-radius: 50px;
+59:             @media (min-width: 561px) and (max-width: 980px) {
+60:             width: 60px;
+61:             height: 60px;
+62:             }
 
 Backtrace:
-C:\Users\Kostya\Desktop\PortpholiaProject\jquerystylemod.scss:41
+C:\Users\Kostya\Desktop\PortpholiaProject\jquerystylemod.scss:57
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-grey\".\A         on line 41 of C:\Users\Kostya\Desktop\PortpholiaProject\jquerystylemod.scss\A \A 36: .slick-prev, .slick-next {\A 37: \A 38:     width: 85px;\A 39:     height: 85px;\A 40:     background: #a7a4a4;\A 41:     border: 1px solid $dark-grey;\A 42:     border-radius: 50px;\A 43:                 @media (max-width: 560px) {\A 44:        width: 45px;\A 45:     height: 45px\A 46:     }"; }
+  content: "Error: Undefined variable: \"$dark-grey\".\A         on line 57 of C:\Users\Kostya\Desktop\PortpholiaProject\jquerystylemod.scss\A \A 52: .slick-prev, .slick-next {\A 53: \A 54:     width: 85px;\A 55:     height: 85px;\A 56:     background: #a7a4a4;\A 57:     border: 1px solid $dark-grey;\A 58:     border-radius: 50px;\A 59:             @media (min-width: 561px) and (max-width: 980px) {\A 60:             width: 60px;\A 61:             height: 60px;\A 62:             }"; }
