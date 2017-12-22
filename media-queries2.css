@@ -1,0 +1,114 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+@media (max-width: 1900px) {
+  .sitestep {
+    padding: 0 13%; } }
+  @media (max-width: 1900px) and (max-width: 1600px) {
+    .sitestep {
+      padding: 0 7%; } }
+
+  @media (max-width: 1900px) and (max-width: 1600px) and (max-width: 1200px) {
+    .sitestep {
+      padding: 0 5%; } }
+
+  @media (max-width: 1900px) and (max-width: 1600px) and (max-width: 1200px) and (max-width: 980px) {
+    .sitestep {
+      padding: 0 1%; } }
+
+@media (min-width: 561px) and (max-width: 980px) {
+  .top-head__main_item_list h1,
+  .body-banner__item-article h1 {
+    font-family: 'LatoLight', sans-serif;
+    font-size: 40px;
+    line-height: 100px;
+    padding-bottom: 0; }
+
+  .top-head__main_item_list h3,
+  .body-banner__item-article h3 {
+    font-family: 'LatoLight', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: .2px; }
+
+  .top-head__main_item_list span,
+  .body-banner__item-article span {
+    font-family: 'LatoBlack', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px; }
+
+  .banner-block-article__text {
+    font-family: 'LatoLightItalic', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding: 191px 0;
+    letter-spacing: .3px;
+    color: #f4f4f4; }
+
+  .banner-block::before {
+    font-size: 100px; }
+
+  .banner-block::after {
+    font-size: 100px; } }
+@media (max-width: 560px) {
+  .top-head__main_item_list h1,
+  .body-banner__item-article h1 {
+    font-family: 'LatoLight', sans-serif;
+    font-size: 27px;
+    line-height: 100px;
+    padding-bottom: 0; }
+
+  .top-head__main_item_list h3,
+  .body-banner__item-article h3 {
+    font-family: 'LatoLight', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .2px; }
+
+  .top-head__main_item_list span,
+  .body-banner__item-article span {
+    font-family: 'LatoBlack', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px; }
+
+  .price-block-body__item-button__link {
+    font-size: 12px;
+    width: 90px; }
+
+  .banner-block-article__text {
+    font-family: 'LatoLightItalic', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto;
+    padding: 191px 0;
+    letter-spacing: .3px;
+    color: #f4f4f4; }
+
+  .banner-block-article {
+    margin: 0 20px;
+    text-align: center; }
+
+  .banner-block::before {
+    font-size: 70px; }
+
+  .banner-block::after {
+    font-size: 70px; } }
+
+/*# sourceMappingURL=media-queries2.css.map */
