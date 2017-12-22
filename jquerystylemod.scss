@@ -1,78 +1,38 @@
 .slick-prev:before {
     content: url('png-img/back.png');
+    @media (max-width: 560px) {
+    content: url('png-img/back32.png');
+    }
 }
 
 .slick-next:before {
     content: url('png-img/next.png');
-}
-
-.banner-slider-mod  {
-
-     .slick-next {
-    right: -75px;
+        @media (max-width: 560px) {
+        content: url('png-img/next32.png');
     }
 }
-
-.banner-slider-mod  {
-
-    .slick-prev {
-    left: -75px;
-    }
-}
-
-.price-slider-mod {
-
-     .slick-next {
-    right: -75px;
-    }
-}
-
-
-.price-slider-mod {
-
-    .slick-prev {
-    left: -75px;
-    }
-}
-
-.acordeon-slider {
-
-     .slick-prev {
-    left: -85px;
-    }
- }
-
- .acordeon-slider {
-
-     .slick-next {
-    right: -85px;
-    }
-}
-
-
-
-.slick-prev, .slick-next {
-
-    width: 85px;
-    height: 85px;
-    background: #a7a4a4;
-    border: 1px solid $dark-grey;
-    border-radius: 50px;
-    }
-
 
 .banner-slider-mod {
-
-     .slick-prev, .slick-next {
+.slick-prev, .slick-next {
     width: 75px;
     height: 75px;
     background: transparent;
+            @media (max-width: 560px) {
+       width: 45px;
+    height: 45px;
+        background: #5d5d5d96;
+    }
+    }
+        .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: #2d3135b5;
+
     }
 }
 
 
 .price-slider-mod    {
-
 .slick-prev, .slick-next {
 
     width: 85px;
@@ -80,21 +40,135 @@
     background: #a7a4a4;
     border: 1px solid $dark-grey;
     border-radius: 50px;
+                @media (max-width: 560px) {
+       width: 45px;
+    height: 45px
     }
-}
-
-.banner-slider-mod {
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
-    color: transparent;
-    outline: none;
-    background: #2d3135b5;
     }
-}
-
-.price-slider-mod  {
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
         color: transparent;
     outline: none;
     background: #656262;
     }
 }
+// .price-slider-mod    {
+
+// .slick-prev, .slick-next {
+
+//     width: 85px;
+//     height: 85px;
+//     background: #a7a4a4;
+//     border: 1px solid $dark-grey;
+//     border-radius: 50px;
+//       @media (max-width: 560px) {
+//     width: 55px;
+//     height: 55px;
+//     background: #a7a4a4;
+//     border: 1px solid $dark-grey;
+//     border-radius: 55px;
+//       }
+//       }
+// }
+
+.acordeon-slider {
+    .slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    // background: #a7a4a4;
+    border: 1px solid $dark-grey;
+    border-radius: 50px;
+    @media (max-width: 560px) {
+       width: 35px;
+    height: 35px;
+    border: none;
+    }
+    }
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    outline: none;
+    background: #ff0a0017;
+
+    }
+}
+
+
+.banner-slider-mod  {
+
+     .slick-next {
+    right: -75px;
+             @media (max-width: 560px) {
+     right: -55px;
+    }
+    .slick-prev {
+    left: -75px;
+             @media (max-width: 560px) {
+     left: -55px;
+    }
+//     @media (max-width: 560px) {
+
+//     width: 45px;
+//     height: 45px;
+//     background: transparent;
+
+}
+}
+}
+
+
+
+
+
+.price-slider-mod {
+
+     .slick-next {
+    right: -75px;
+         @media (max-width: 560px) {
+     right: -55px;
+    }
+    }
+    .slick-prev {
+    left: -75px;
+         @media (max-width: 560px) {
+     left: -55px;
+    }
+    }
+}
+
+.acordeon-slider {
+    .slick-prev:before {
+    content: url('png-img/left-arrow.png');
+    }
+     .slick-prev {
+    left: -85px;
+         @media (max-width: 560px) {
+     left: -55px;
+    }
+    }
+
+    .slick-next:before {
+    content: url('png-img/right-arrow.png');
+    }
+     .slick-next {
+    right: -85px;
+     @media (max-width: 560px) {
+     right: -55px;
+    }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+// .slick-prev, .slick-next {
+//     width: 50px;
+//     height: 50px;
+//     /* background: #a7a4a4; */
+//     border: 1px solid #5a5a5a;
+//     border-radius: 50px;
+// }
